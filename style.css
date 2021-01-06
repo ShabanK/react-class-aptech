@@ -41,3 +41,8 @@ button {
   background-color: #0093ff;
   font-size: 120%;
 }
+
+button.sideButton {
+  font-size: 80%;
+  float: right;
+}
