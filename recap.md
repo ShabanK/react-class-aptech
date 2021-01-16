@@ -135,3 +135,9 @@ function MyComponent(props){
 
 export default MyComponent;
 ```
+
+## Last times assignment
+
+### Create a React App
+
+### Learn how to use arr.map(), arr.filter(), arr.reduce(), arr.forEach()
