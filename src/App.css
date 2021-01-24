@@ -1,0 +1,10 @@
+.content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+input{
+  display: block;
+  padding:10px;
+}
