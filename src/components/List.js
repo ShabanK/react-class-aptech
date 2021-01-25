@@ -1,16 +1,20 @@
 import React from "react"
-// import ListItem from "./ListItem"
+import ListItem from "./ListItem"
 
 function List(props){
+
+    const {listItems} = props
     return (
-        <div className="content">
-            {props.listItems.map((item)=>{ 
+        <div>
+            {listItems.map((item)=>{ 
+                const {id,username,message} = item;
                 return (
                     // add a key
-                    <div>
-                        <h3>{item.username}</h3>
-                        <p>{item.message}</p>
-                    </div>
+                    <ListItem
+                        key={id}
+                        username={username}
+                        message={message}
+                    />
                 )}
             )}
         </div>
