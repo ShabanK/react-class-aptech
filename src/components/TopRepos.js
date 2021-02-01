@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+// import Axios from "axios";
 import "./TopRepos.css";
 
 function TopRepos() {
@@ -9,15 +10,12 @@ function TopRepos() {
     "Python",
     "Ruby",
   ]);
-
-  //if selectedLanguage === language then className= "selected", className=""
-  // selectedLanguage===language ? className="selected" : className=""
+  const [selectedLanguage, setSelectedLanguage] = useState("All");
 
   const changeLanguage = (language) => {
     setSelectedLanguage(language);
   };
 
-  const [selectedLanguage, setSelectedLanguage] = useState("All");
   return (
     <>
       <nav>
@@ -34,12 +32,8 @@ function TopRepos() {
             </button>
           );
         })}
-        {/* <button>All</button>
-        <button>Java</button>
-        <button>Javascript</button>
-        <button>Python</button>
-        <button>Ruby</button> */}
       </nav>
+      <div></div>
     </>
   );
 }

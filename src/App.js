@@ -1,4 +1,3 @@
-import { useState } from "react";
 import TopRepos from "./components/TopRepos";
 import "./App.css";
 
