@@ -1,0 +1,20 @@
+button {
+  border: none;
+  background-color: white;
+  color: purple;
+  font-size: 20px;
+  padding: 2% 3%;
+  text-decoration: none;
+}
+button:focus {
+  outline: none;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2%;
+}
+button.selected {
+  color: orange;
+}

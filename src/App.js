@@ -1,10 +1,13 @@
+import { useState } from "react";
+import TopRepos from "./components/TopRepos";
 import "./App.css";
 
 function App() {
-  let add = (num1, num2) => {
-    return num1 + num2;
-  };
-  return <div className="App"></div>;
+  return (
+    <>
+      <TopRepos />
+    </>
+  );
 }
 
 export default App;
